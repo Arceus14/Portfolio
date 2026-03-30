@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syed Umar | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+
+body{
+background:linear-gradient(180deg,#f8fbff 0%, #eef6ff 40%, #ffffff 100%);
+color:#1f2937;
+line-height:1.75;
+font-size:17px;
+}
+
+.nav{
+position:fixed;
+top:0;
+width:100%;
+background:linear-gradient(90deg,#ffffff,#f0f7ff);
+padding:18px;
+text-align:center;
+border-bottom:1px solid #e5eefc;
+z-index:1000
+}
+
+.nav a{
+color:#334155;
+margin:0 18px;
+text-decoration:none;
+font-size:1rem;
+font-weight:500
+}
+
+.nav a:hover{color:#2563eb}
+
+header{
+padding:140px 20px 70px;
+text-align:center;
+max-width:900px;
+margin:auto
+}
+
+header h1{
+font-size:3.6rem;
+font-weight:700;
+letter-spacing:-1px;
+background:linear-gradient(90deg,#2563eb,#60a5fa);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent
+}
+
+header p{
+margin-top:18px;
+color:#475569;
+font-size:1.2rem
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:65px 20px
+}
+
+.section-title{
+font-size:2.3rem;
+margin-bottom:30px;
+font-weight:600;
+color:#1e3a8a
+}
+
+.card{
+background:linear-gradient(180deg,#ffffff,#f8fbff);
+border:1px solid #e2ecff;
+padding:36px;
+border-radius:18px;
+margin-bottom:32px;
+box-shadow:0 12px 40px rgba(37,99,235,0.06);
+transition:0.25s ease
+}
+
+.card:hover{
+transform:translateY(-4px);
+box-shadow:0 18px 50px rgba(37,99,235,0.12)
+}
+
+.project-title{
+font-size:1.6rem;
+font-weight:600;
+margin-bottom:14px;
+margin-top:10px;
+color:#1e40af
+}
+
+.project-btn{
+display:inline-block;
+background:linear-gradient(90deg,#dbeafe,#bfdbfe);
+color:#1e3a8a;
+padding:10px 18px;
+border-radius:10px;
+text-decoration:none;
+font-size:0.92rem;
+font-weight:500;
+margin-right:12px;
+margin-top:12px;
+transition:0.2s ease
+}
+
+.project-btn:hover{
+background:linear-gradient(90deg,#bfdbfe,#93c5fd);
+transform:translateY(-1px)
+}
+
+.project-image{
+width:100%;
+border-radius:14px;
+margin-bottom:22px;
+border:1px solid #e5edff
+}
+
+.image-row{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:18px;
+margin-bottom:10px
+}
+
+.caption{
+text-align:center;
+font-size:0.9rem;
+color:#475569;
+margin-bottom:18px
+}
+
+.split{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center
+}
+
+.split.reverse{
+direction:rtl
+}
+
+.split.reverse > *{
+direction:ltr
+}
+
+@media(max-width:800px){
+.split{
+grid-template-columns:1fr;
+}
+}
+
+footer{
+text-align:center;
+padding:60px;
+color:#64748b;
+font-size:0.95rem
+}
+
+</style>
+</head>
+<body>
+
+<div class="nav">
+<a href="#projects">Projects</a>
+<a href="#robotics">Robotics</a>
+<a href="#contact">Contact</a>
+</div>
+
+<header>
+<h1>Syed Umar</h1>
+<p>
+Building systems at the intersection of AI, robotics, and scalable platforms — focused on creating real‑world impact and enabling a new AI‑human collaborative economy.
+</p>
+</header>
+
+<div class="container" id="projects">
+<h2 class="section-title">Featured Projects</h2>
+
+<div class="card">
+<img src="images/treelan.png" class="project-image">
+<div class="project-title">TreeLan — Skill‑First AI Freelance Economy</div>
+<p>
+TreeLan is a skill‑first freelancing platform designed to help beginners and underrepresented learners earn through verified abilities rather than past experience. The platform introduces AI‑assisted testing sessions that evaluate how effectively users generate high‑quality output — even when AI tools are used.
+</p>
+<br>
+<p>
+Instead of restricting AI usage, TreeLan embraces it and designs assessments that measure creativity, reasoning, and execution. The goal is to build a learning‑to‑earning ecosystem where users learn skills, prove them through structured tests, and immediately access paid opportunities.
+</p>
+<br>
+<p>
+TreeLan aims to create a new economy where AI and humans work together productively, reducing hiring risk for clients while opening doors for beginner freelancers across domains.
+</p>
+<a href="https://treelan-testing-backend.onrender.com" class="project-btn">Live Demo</a>
+<a href="https://youtu.be/EdDv4drXqhM" class="project-btn">Walkthrough</a>
+</div>
+
+<div class="card">
+<div class="split">
+<div>
+<div class="project-title">CoinologicServices</div>
+<p>
+Built Coinologicservices.com, a multi‑service business website with clean responsive design and structured service pages. The website includes SEO optimization using meta tags, sitemap.xml, robots.txt, and structured data to improve search visibility.
+</p>
+<br>
+<p>
+Implemented Google OAuth authentication with secure session management and OAuth email scope, allowing users to contact the business directly after login. The system also supports context‑based redirects and mobile‑friendly navigation.
+</p>
+<a href="https://www.coinologicservices.com" class="project-btn">Visit Website</a>
+</div>
+<img src="images/coinologic.png" class="project-image">
+</div>
+</div>
+
+<div class="card">
+<div class="split reverse">
+<div>
+<div class="project-title">SoulSpace — Student Mental Health Platform</div>
+<p>
+SoulSpace is a mental health monitoring platform designed for higher‑grade students. The system analyzes behavioral patterns using validated psychological assessments such as PHQ‑9 and GAD‑7.
+</p>
+<br>
+<p>
+It includes a chatbot named Serene that monitors daily inputs, detects potential risk signals, and generates alerts when concerning behavioral patterns appear. The project ranked in the top 9 among 200 teams.
+</p>
+</div>
+<img src="images/soulspace.jpeg" class="project-image">
+</div>
+</div>
+
+</div>
+
+<div class="container" id="robotics">
+<h2 class="section-title">Robotics</h2>
+
+<div class="card">
+<div class="image-row">
+<div>
+<img src="images/sewerone_sim.jpeg" class="project-image">
+<div class="caption">Gazebo and RViz2 Simulation</div>
+</div>
+<div>
+<img src="images/sewerone_cad.jpeg" class="project-image">
+<div class="caption">CAD modelled in Onshape</div>
+</div>
+</div>
+<div class="project-title">SewerOne — Autonomous Sludge Cleaning Robot</div>
+<p>
+SewerOne is a sludge cleaning robot designed for sewage treatment plants to reduce human exposure to hazardous environments. The robot uses ROS2 Humble with Nav2 navigation and SLAM mapping for autonomous movement.
+</p>
+<br>
+<p>
+I implemented Gazebo simulation and RViz2 SLAM using LiDAR sensors and odometry. The system autonomously maps confined spaces and navigates around obstacles. A functional prototype was built for an industry‑hosted hackathon.
+</p>
+<br>
+<p>
+The project won 1st place and secured an internship opportunity at Genex Utility, demonstrating its practical value and deployment potential.
+</p>
+</div>
+
+</div>
+
+<div class="container">
+<h2 class="section-title">CS50W Django Projects</h2>
+<div class="card">
+<img src="images/cs50w.png" class="project-image">
+<p>
+Built multiple Django‑based applications as part of Harvard's CS50 Web Programming course, focusing on backend architecture, authentication systems, database handling, and dynamic UI interactions.
+</p>
+<br>
+<p>
+<a href="https://youtu.be/vYFrC3gx_yE">Project 0 — Google Clone</a><br>
+<a href="https://youtu.be/AGMtLxK9WBU">Project 1 — Wikipedia Clone</a><br>
+<a href="https://youtu.be/0Vc07qDlQRE">Project 2 — Auction (eBay Clone)</a><br>
+<a href="https://youtu.be/0NsA1NsCPy8">Project 3 — Mail</a>
+</p>
+</div>
+</div>
+
+<div class="container" id="contact">
+<h2 class="section-title">Contact</h2>
+<div class="card">
+<p>Email: arceus14regal@gmail.com</p>
+<p>LinkedIn: www.linkedin.com/in/syedumar14</p>
+<p>Twitter: https://x.com/SyedUmar654828</p>
+</div>
+</div>
+
+<div class="container">
+<h2 class="section-title">About Syed</h2>
+<div class="card">
+<p>
+Syed is a dedicated individual striving to become a useful engineer who builds technology with real‑world impact. He is currently a second‑year B.Tech student majoring in Computer Science and Engineering.
+</p>
+<br>
+<p>
+He has completed Harvard University's open‑source CS50x course and is currently completing CS50W and CS50 AI to further strengthen his skills and work toward his vision for TreeLan — a platform aimed at enabling a new economy where AI and humans collaborate productively.
+</p>
+</div>
+</div>
+
+<footer>
+Built for VibeCon — Syed Umar
+</footer>
+
+</body>
+</html>
